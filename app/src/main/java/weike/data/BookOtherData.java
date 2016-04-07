@@ -1,4 +1,4 @@
-package weike.data;
+﻿package weike.data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +19,7 @@ public class BookOtherData {
     private String shareNumber;
     private String markNumber;
 
-    private List<Map<String,String>> list;  //评论列表
-
-    private static BookOtherData data = null;
+    private List<Map<String,String>> list;  //评论    private static BookOtherData data = null;
 
     private BookOtherData() {
         list = new ArrayList<>();
