@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   android:padding="5dp"
+    >
+
+        <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="@dimen/imgwidth_listitem"
+            android:layout_height="@dimen/imgheight_listitem"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_book_name"
+            android:text="射雕英雄传"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img_item"
+            android:layout_toEndOf="@+id/img_item"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_book_degree"
+            android:text="(7成新)"
+            android:layout_toRightOf="@+id/textview_item_book_name"
+            android:layout_toEndOf="@+id/textview_item_book_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/textview_item_book_name"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_book_author"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_below="@+id/textview_item_book_name"
+            android:layout_alignLeft="@+id/textview_item_book_name"
+            android:layout_alignStart="@+id/textview_item_book_name"
+            android:layout_marginTop="22dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_book_press"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/textview_item_book_author"
+            android:layout_toEndOf="@+id/textview_item_book_author"
+            android:layout_alignBottom="@+id/textview_item_book_author"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_book_description"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/textview_item_book_author"
+            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@+id/textview_item_goal"
+            android:layout_alignStart="@+id/textview_item_goal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_goal"
+            android:text="想卖"
+            android:textSize="18sp"
+            android:textColor="@color/tv_selected"
+            android:layout_toRightOf="@+id/img_item"
+            android:layout_toEndOf="@+id/img_item"
+            android:layout_alignBottom="@+id/img_item"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_origin_price"
+            android:text="45"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:layout_alignBottom="@+id/textview_item_sell_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="bottom"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_item_sell_price"
+            android:text="32"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/img_item"
+            android:layout_toLeftOf="@+id/textview_item_origin_price"
+            android:layout_toStartOf="@+id/textview_item_origin_price"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="bottom"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_item"
+        android:layout_marginTop="5dp"
+        >
+
+        <View
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/view_margin"
+            />
+
+        <include layout="@layout/view_liuyan"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/view_margin"
+            android:layout_toStartOf="@+id/view_margin"
+            android:layout_alignBottom="@+id/view_margin"
+            android:id="@+id/rl_list_item_liuyan"/>
+
+
+        <include layout="@layout/view_share"
+            android:id="@+id/rl_list_item_share"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/view_margin"
+            android:layout_toEndOf="@+id/view_margin"
+            android:layout_alignBottom="@+id/view_margin"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

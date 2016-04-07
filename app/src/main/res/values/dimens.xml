@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="statusMargin">0dp</dimen>
+    <dimen name="userSpace">160dp</dimen>
+    <dimen name="photoMarginTop">34dp</dimen>
+    <dimen name="photoMarginLeft">100dp</dimen>
+    <dimen name="sectionIconSize">24dp</dimen>
+    <dimen name="item_title_photo">32dp</dimen>
+    <dimen name="tv_tab_width">60dp</dimen>
+    <dimen name="tv_tab_height">40dp</dimen>
+    <dimen name="img_cover_width">90dp</dimen>
+    <dimen name="img_cover_height">120dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="login_view_height">160dp</dimen>
+    <dimen name="rl_college_height">38dp</dimen>
+    <dimen name="imgwidth_listitem">120dp</dimen>
+    <dimen name="imgheight_listitem">160dp</dimen>
+    <dimen name="dialog_contact_img_size">40dp</dimen>
+    <dimen name="dialog_handle_book_height">40dp</dimen>
+    <dimen name="grid_share_item_size">50dp</dimen>
+    <dimen name="arrow_setting_size">20dp</dimen>
+    <dimen name="user_icon_size">64dp</dimen>
+    <dimen name="comment_list_user_size">20dp</dimen>
+    <dimen name="img_center_user_size">90dp</dimen>
+    <dimen name="base_info_user_size">40dp</dimen>
+</resources>

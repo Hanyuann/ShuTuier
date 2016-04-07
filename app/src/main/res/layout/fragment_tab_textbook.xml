@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_college_height"
+        android:id="@+id/rl_college"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_college_label"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_down"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_up_down"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/img_up_down"
+            android:layout_toStartOf="@+id/img_up_down"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/tv_choose_college"
+            android:text="全部"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_item_bottom"
+        android:layout_below="@+id/rl_college"
+        android:id="@+id/view_line_textbook_1"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent" android:id="@+id/swipe_container"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/view_line_textbook_1"
+        >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_colleges"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="15dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:layout_below="@+id/rl_college"
+        android:visibility="invisible"
+        />
+
+    <include layout="@layout/view_loading_data"
+        android:id="@+id/rl_tab_textbook_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
